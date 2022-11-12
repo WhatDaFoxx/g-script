@@ -1,0 +1,14 @@
+function myFunction(myArray) {
+
+
+let myRegEx =  /(?<=\[).+?(?=\])/gm;
+let array1;
+let myStr = '[g][p][env][dep]'
+
+array1 = myStr.match(myRegEx);
+
+Logger.log(array1);
+
+return array1;
+
+}
