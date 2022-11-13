@@ -1,0 +1,26 @@
+function myFunction(myStore, myCode) {
+
+var Shoppers = {
+p: ["*", 1.07],
+g: "*1.05",
+dep: "+",
+env: "+"
+}
+
+
+
+
+//let price = myPrice;
+if (myStore == "Shoppers") 
+  var store = Shoppers;
+//let item_number = myItemNum;
+let code = myCode
+
+//Find all [] in the string and extract the contents of each to an array 
+let myRegEx =  /(?<=\[).+?(?=\])/gm;
+
+array1 = code.match(myRegEx);
+
+return store.dep;
+
+}
